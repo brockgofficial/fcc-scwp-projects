@@ -1,13 +1,13 @@
-# 
+###
 # Function to define how to format the arithmetic
 #
 # - Args:
-#   - List of of strings of problems
-#   - Boolean to display answer (optional)
+#   - problems: List of of strings of problems.
+#   - displayResult: Boolean to display answer (optional).
 #
 # - Return:
-#   - arranged_problems, either error message or the formatted output
-#
+#   - arranged_problems, either error message or the formatted output.
+###
 def arithmetic_arranger(problems, displayResult=False):
   #Function Constants
   BUFFER = 4
