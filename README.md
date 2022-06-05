@@ -4,7 +4,7 @@ The submissions will be made through the following Replit profile: [Mazuradi Rep
 
 <br>
 
-**Arithmetic Formatter:** [here](https://replit.com/@Mazuradi/FCC-Arithmetic-Formatter)  
+**Arithmetic Formatter:** [here](https://replit.com/@Mazuradi/FCC-Arithmetic-Arranger)  
 **Time Calculator:** [here](https://replit.com/@Mazuradi/FCC-Time-Calculator)
 
 <br>
