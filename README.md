@@ -4,9 +4,9 @@ The submissions will be made through the following Replit profile: [Mazuradi Rep
 
 <br>
 
-[![Project Python Tests](https://github.com/brockgofficial/fcc-scwp-projects/actions/workflows/fcc-python-project-pipeline.yml/badge.svg)](https://github.com/brockgofficial/fcc-scwp-projects/actions/workflows/fcc-python-project-pipeline.yml)
+**Arithmetic Formatter:** [here](https://replit.com/@Mazuradi/FCC-Arithmetic-Formatter)  
+**Time Calculator:** [here](https://replit.com/@Mazuradi/FCC-Time-Calculator)
 
 <br>
 
-**Arithmetic Formatter:** [here](https://replit.com/@Mazuradi/FCC-Arithmetic-Formatter)  
-**Time Calculator:** [here](https://replit.com/@Mazuradi/FCC-Time-Calculator)
+[![Project Python Tests](https://github.com/brockgofficial/fcc-scwp-projects/actions/workflows/fcc-python-project-pipeline.yml/badge.svg)](https://github.com/brockgofficial/fcc-scwp-projects/actions/workflows/fcc-python-project-pipeline.yml)
