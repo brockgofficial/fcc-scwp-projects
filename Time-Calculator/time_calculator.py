@@ -10,17 +10,6 @@
 #   - new_time, The start time with the added duration.
 ###
 
-# TODO
-# - don't need to add checks to validate input
-# - assume start times are valid times
-# - minutes in duration is 0 - 60 mins
-# - hour can be any whole number
-# - Outputs can be:
-#   - Combined time
-#   - Combined time, Day
-#   - Combined time, (next day/# days later)
-#   - Combined time, Day (next day/# days later)
-
 def add_time(start, duration, day=False):
 
   #Split starting time into parts
@@ -41,15 +30,23 @@ def add_time(start, duration, day=False):
 
   #Calc days passed
   days_passed = int(t_new / (24 * 60))
+
+  #Get the new day (if applicable)
+  if day != False:
+    days_of_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    current_day = days_of_week.index(day.lower().capitalize())
+    new_day =  days_of_week[((current_day - len(days_of_week)) + (days_passed % len(days_of_week)))] if (current_day + days_passed) > len(days_of_week) else days_of_week[current_day + days_passed]
+  
+  #Formulate final time string, based on the days passed
   if days_passed == 1:
-    days_passed = ", (next day)"
+    days_passed = "{} {}".format("" if day == False else (", " + new_day), "(next day)")
   elif days_passed >= 2:
-    days_passed = ", ({} days later)".format(days_passed)
+    days_passed = "{} {}".format("" if day == False else (", " + new_day), "(" + str(days_passed) + " days later)")
   else:
-    days_passed = ""
+    days_passed = "{}".format("" if day == False else (", " + new_day))
 
   #Display the new time output (including Day/Extra Days if applicable)
-  new_time_proto = "Orig(m): {} - New(m): {} - Days Passed: {}".format(h_start * 60 + m_start , t_new, int(t_new / (24*60)))
-  new_time = "{:02d}:{:02d} {}M{}".format(12 if h_new == 0 else h_new, m_new, "A" if h_new < 12 else "P", days_passed)
+  new_time = "{:01d}:{:02d} {}M{}".format(h_new -12 if h_new > 12 else (12 if h_new == 0 else h_new), m_new, "A" if h_new < 12 else "P", days_passed)
 
+  #Return the new time with the day and passed days if applicable
   return new_time
