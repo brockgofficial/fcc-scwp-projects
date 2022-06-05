@@ -62,4 +62,5 @@ def arithmetic_arranger(problems, displayResult=False):
       #Construct final answer (include answers if required)
       arranged_problems = "{}\n{}\n{}{}".format(first_operands_layer, second_operands_layer, third_layer, ("\n" + answer_layer if displayResult else ""))
 
+  #return the arranged formatter response
   return arranged_problems
