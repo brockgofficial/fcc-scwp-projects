@@ -11,7 +11,7 @@ on:
         default: ""
 
 jobs:
-  invoke-tests-${{ inputs.project_name }}:
+  setup-and-invoke-tests:
     name: Run Python tests in ${{ inputs.project_name }}
     runs-on: ubuntu-latest
     steps:

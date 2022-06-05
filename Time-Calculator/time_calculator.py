@@ -37,7 +37,7 @@ def add_time(start, duration, day=False):
     current_day = days_of_week.index(day.lower().capitalize())
     new_day =  days_of_week[((current_day - len(days_of_week)) + (days_passed % len(days_of_week)))] if (current_day + days_passed) > len(days_of_week) else days_of_week[current_day + days_passed]
   
-  #Formulate final time string, based on the days passed
+  #Formulate final time string, based on the day and days passed
   if days_passed == 1:
     days_passed = "{} {}".format("" if day == False else (", " + new_day), "(next day)")
   elif days_passed >= 2:
