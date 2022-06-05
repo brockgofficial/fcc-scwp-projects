@@ -13,20 +13,14 @@ on:
       - main
 
 jobs:
-  run_python_tests:
-    runs-on: ubuntu-latest
-    strategy:
-      max-parallel: 1
-      matrix:
-        include:
-          - name: Arithmetic-Formatter
-            dependencies: "pytest"
-          - name: Time-Calculator
-            dependencies: ""
-    steps:
-      - name: Checkout repo code (${{ github.repository }})
-        uses: actions/checkout@v3
+  setup-and-run-arithmetic-formatter:
+    name: "Arithmetic Formatter: Setup and Run"
     uses: ./.github/workflows/run-python-tests.yml
     with:
-      project_name: ${{ matrix.name }}
-      python_dependencies: ${{ matrix.dependencies }}
+      project_name: "Arithmetic-Formatter"
+      python_dependencies: "pytest"
+  setup-and-run-time-calculator:
+    name: "Time Calculator: Setup and Run"
+    uses: ./.github/workflows/run-python-tests.yml
+    with:
+      project_name: "Time-Calculator"

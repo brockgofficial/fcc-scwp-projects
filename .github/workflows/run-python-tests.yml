@@ -13,7 +13,10 @@ on:
 jobs:
   invoke-tests-${{ inputs.project_name }}:
     name: Run Python tests in ${{ inputs.project_name }}
+    runs-on: ubuntu-latest
     steps:
+    - name: Checkout repo code (${{ github.repository }})
+      uses: actions/checkout@v3
     - name: Install Python
       uses: actions/setup-python@v3
       with:

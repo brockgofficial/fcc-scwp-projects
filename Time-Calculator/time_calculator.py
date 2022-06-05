@@ -28,7 +28,7 @@ def add_time(start, duration, day=False):
   h_new, m_new = divmod(t_new, 60)
   h_new %= 24
 
-  #Calc days passed
+  #Calculate days passed
   days_passed = int(t_new / (24 * 60))
 
   #Get the new day (if applicable)
