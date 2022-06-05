@@ -1,5 +1,5 @@
 #Import third party modules
 from unittest import main
 
-#Run unit tests automatically.
+#Run unit tests automatically
 main(module='test_module', exit=False)

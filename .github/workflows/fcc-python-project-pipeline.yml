@@ -26,8 +26,7 @@ jobs:
     steps:
       - name: Checkout repo code (${{ github.repository }})
         uses: actions/checkout@v3
-      - name: Setup and run tests
-        uses: ./.github/workflows/run-python-tests.yml
-        with:
-          project_name: ${{ matrix.name }}
-          python_dependencies: ${{ matrix.dependencies }}
+    uses: ./.github/workflows/run-python-tests.yml
+    with:
+      project_name: ${{ matrix.name }}
+      python_dependencies: ${{ matrix.dependencies }}
