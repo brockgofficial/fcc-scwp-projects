@@ -1,3 +1,4 @@
+#Setup the unit tests to run when called from main
 import unittest
 from time_calculator import add_time
 

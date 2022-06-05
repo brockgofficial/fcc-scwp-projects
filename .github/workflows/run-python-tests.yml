@@ -24,7 +24,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        if [ ! "${{ inputs.python_dependencies }}" ]; then
+        if [ "${{ inputs.python_dependencies }}" != "" ]; then
           pip install ${{ inputs.python_dependencies }}
         fi
       shell: bash
