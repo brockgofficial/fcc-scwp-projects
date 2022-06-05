@@ -1,5 +1,7 @@
 #This is a templated action used to run python tests of a specific project for
 #FCC Scientific Copmuting projects.
+name: "Run Python \"main.py\" template"
+
 on:
   workflow_call:
     inputs:

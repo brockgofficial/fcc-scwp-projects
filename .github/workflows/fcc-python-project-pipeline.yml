@@ -1,5 +1,4 @@
 #Pipeline to run "main" from all the fcc projects which includes the tests
-
 name: "FCC: Scientific Computing Project Tests"
 
 on:
