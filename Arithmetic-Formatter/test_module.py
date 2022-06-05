@@ -73,7 +73,7 @@ test_cases = [
     id='test_five_problems_with_solutions'),
 ]
 
-#Test blueprint to run with arithmetic_arranger function
+#Test blueprint to run with arithmetic_arranger function and above cases
 @pytest.mark.parametrize('arguments,expected_output,fail_message', test_cases)
 def test_template(arguments, expected_output, fail_message):
   actual = arithmetic_arranger(*arguments)
