@@ -29,5 +29,6 @@ jobs:
         shell: bash
       - name: Run Arithmetic-Formattter test
         run: |
-          python ./Arithmetic-Formatter/main.py
+          cd ./Arithmetic-Formatter
+          python ./main.py
         shell: bash
