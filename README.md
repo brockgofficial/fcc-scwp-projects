@@ -3,7 +3,7 @@ This repository holds the code for the 5 projects related to the freecodecamp Sc
 The submissions will be made through the following Replit profile: [Mazuradi Replit](https://replit.com/@Mazuradi)<br> 
 
 <br>
-[![Project Python Tests](https://github.com/brockgofficial/fcc-scwp-projects/actions/workflows/FCC:%20Scientific%20Computing%20Project%20Tests/badge.svg)](https://github.com/brockgofficial/fcc-scwp-projects/actions/workflows/fcc-python-project-pipeline.yml)
+[![Project Python Tests](https://github.com/brockgofficial/fcc-scwp-projects/actions/workflows/FCC:+Scientific+Computing+Project+Tests/badge.svg)](https://github.com/brockgofficial/fcc-scwp-projects/actions/workflows/fcc-python-project-pipeline.yml)
 <br>
 
 **Arithmetic Formatter:** [here](https://replit.com/@Mazuradi/FCC-Arithmetic-Formatter)  
